@@ -1,0 +1,123 @@
+.blog{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #3a9d23;
+}
+
+.blog .title{
+    padding-top: 1rem;
+}
+.blog .title h1{
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+}
+.blog .title h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #000;
+}
+
+.top{
+    padding-top: 3rem;
+}
+.blog .container .items{
+    /*padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;*/
+    width: 100%;
+    height: auto;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1%;
+}
+
+
+
+.blog .container .item{
+    /*max-width: 450px;
+    height: 350px;
+    margin: auto;
+    position: relative;*/
+    overflow: hidden;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+
+    
+    height: auto;
+    margin: 10px;
+    position: relative;
+    padding: 10px 0px;
+}
+.blog .container .item img:hover{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.blog .container .item .img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.blog .container .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*.item .info{
+    position: absolute;
+    bottom: 8px;
+    left: 1rem;
+}*/
+.item .info h2{
+    background: crimson;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    padding: 5px 5px;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    bottom: 30px;
+    left: 15px;
+    position: absolute;
+}
+
+@media (max-width: 1024px){
+    .blog .container .item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .blog .container .items{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 425px){
+    .blog .container .items{
+        grid-template-columns: 1fr;
+    }
+}

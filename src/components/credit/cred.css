@@ -1,0 +1,16 @@
+.cred{
+    height: auto;
+    width: 100%;
+    color: #000;
+    position: relative;
+}
+
+p{
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 25px 0 20px 0;
+}
+p span{
+    color: #4169e1;
+}

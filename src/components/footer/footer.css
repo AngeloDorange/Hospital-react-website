@@ -1,0 +1,109 @@
+.foot{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/pexels-pixabay-269077.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.foot .logo{
+    padding-top: 1rem;
+}
+
+.parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+}
+.parts h1{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #4169e1;
+    font-weight: 600;
+}
+.parts p{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: start;
+    padding-top: 2rem;
+}
+.parts h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+}
+
+.part1 .btn-primary:hover, .part3 .btn-primary:hover{
+    color: #fff;
+}
+
+.part2 img{
+    padding-top: 2.5rem;
+}
+
+.part3 .form input{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.part3 .news{
+    padding-top: 1.8rem;
+}
+.part3 .news h1{
+    font-size: 1.2rem;
+}
+.part3 .form{
+    padding-top: 1.2rem;
+}
+
+.design{
+    width: 100%;
+    color: #f1f1fa;
+    position: relative;
+    padding-bottom: 1rem;
+}
+hr{
+    border: none;
+    border-top: 1px solid #f1f1fa;
+    height: 1px;
+    color: #f1f1fa;
+}
+hr::after{
+    content: "";
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.design p{
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 20px 0 15px 0;
+}
+.design p span{
+    color: #4169e1;
+}
+
+
+@media (max-width: 1024px){
+    .parts{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .parts{
+        grid-template-columns: 1fr;
+    }
+}
